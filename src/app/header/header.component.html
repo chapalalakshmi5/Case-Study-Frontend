@@ -1,0 +1,26 @@
+<mat-toolbar>
+    <!-- <span><mat-icon>card_giftcard</mat-icon>Dealsandcoupons</span> -->
+    <div class="logo">
+        <img id="header-img" alt="dwinatech logo" src="https://www.gbsind.com/img/couponndeal.png" />
+    </div>
+    <div class="space">
+
+        <a *ngIf="!loggedIn" mat-button routerLink="home">
+            <mat-icon>home</mat-icon> Home</a>
+
+
+
+
+        <a *ngIf="!loggedIn" mat-button routerLink="contactus">
+            <mat-icon>contact</mat-icon>Contactus</a>
+
+
+
+        <a *ngIf="!loggedIn" mat-raised-button color="accent" routerLink="login">
+            <mat-icon>account_circle</mat-icon>Login/Signup</a>
+
+
+        <a *ngIf="loggedIn" (click)="logoutUser()" mat-raised-button color="accent">
+            <mat-icon>account_circle</mat-icon>Logout</a>
+    </div>
+</mat-toolbar>

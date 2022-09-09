@@ -1,0 +1,28 @@
+        .example-spacer {
+            flex: 1 1 auto;
+        }
+        
+        table {
+            width: 100%;
+            color: orangered;
+            background-image: url("../../../../assets/images/coupon1.jpg");
+        }
+        
+        .mat-form-field {
+            font-size: 12px;
+            width: 100%;
+            color: violet;
+            background-image: url("../../../../assets/images/coupon1.jpg");
+        }
+        
+        .mat-header-cell {
+            background: var(--background-color);
+            background-image: url("../../../../assets/images/coupon1.jpg");
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        /* background-image: url("../../../../assets/images/coupon1.jpg");
+} */

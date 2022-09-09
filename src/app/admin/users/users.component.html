@@ -1,0 +1,60 @@
+<!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened>
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <a href="createuser">Add User</a>
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <a href="listusers">List Users</a>
+            </mat-list-item>
+
+             <mat-list-item role="listitem">Item 3</mat-list-item> -->
+<!-- </mat-list>
+</mat-sidenav>
+<mat-sidenav-content>Main content</mat-sidenav-content>
+</mat-sidenav-container> -->
+<router-outlet></router-outlet>
+<div class="user">
+    <mat-toolbar color="accent">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button >
+    <a mat-raised-button color="primary" (click)="openDialog()">
+        <mat-icon>add_circle</mat-icon>add-user</a>
+    <a   style="margin-left: 8px;" mat-raised-button color="primary" href="listusers">
+        <mat-icon>inbox</mat-icon>users list</a>
+
+
+</mat-toolbar>
+</div>
+<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+     Links -->
+<!-- <ul class="navbar-nav">
+    <li class="nav-item">
+        <a routerLink="employees" class="nav-link" routerLinkActive="active">Employee List</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">Add Employee</a>
+    </li>
+</ul>
+</nav>
+
+
+<div class="container">
+    <br>
+    <h2 style="text-align: center;"></h2>
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div> -->

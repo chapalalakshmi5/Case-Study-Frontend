@@ -1,0 +1,15 @@
+.space {
+    flex: 1 1 auto;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    width: 25%;
+    border-radius: 20%;
+}
+
+
+/* Google Font Import - Poppins */

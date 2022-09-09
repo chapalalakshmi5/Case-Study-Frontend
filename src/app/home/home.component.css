@@ -1,0 +1,249 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+    /* background-image: url("../../assets/images/login3.jpg"); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; */
+}
+
+.categories {
+    width: 100%;
+    margin: 30px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; */
+}
+
+.mat-list,
+mat-list-item {
+    background-color: aqua;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+mat-grid-tile {
+    background: lightblue;
+}
+
+mat-grid-list {
+    width: 100%;
+    margin: 30px;
+    height: 100%;
+    margin: 30px;
+    width: 600px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* ======== Footer ========*/
+
+footer {
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+footer>ul {
+    padding: 0;
+}
+
+footer>ul li {
+    display: inline;
+}
+
+footer>ul li:not(last-child) {
+    margin-right: 10px;
+}
+
+footer>ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* ======== Media query ========*/
+
+@media (min-width: 550px) {
+    #features .card .icon {
+        display: block;
+    }
+    #features .card .content {
+        text-align: left;
+    }
+}
+
+@media (min-width: 600px) {
+    #header {
+        flex-direction: row;
+        left: 5%;
+        right: 5%;
+    }
+    #nav-bar ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #nav-bar ul li {
+        display: inline;
+        margin-right: 50px;
+    }
+    #nav-bar ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    #pricing {
+        flex-direction: row;
+        align-self: center;
+    }
+    #pricing .card:not(last-child) {
+        margin-right: 15px;
+    }
+}
+
+
+/* body {
+    height: 100vh;
+    display: flex;
+    background: #262626;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    color: #666;
+    background-color: #171515;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+ul li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #0A82ED;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+ul li:nth-child(1):hover:before {
+    background-color: #0A82ED;
+}
+
+ul li:nth-child(2):hover:before {
+    background-color: #04a2ffb3;
+}
+
+ul li:nth-child(3):hover:before {
+    background-color: #e23670;
+}
+
+ul li:nth-child(4):hover:before {
+    background-color: #2a6cbb;
+}
+
+ul li:nth-child(5):hover:before {
+    background-color: #ff1a1a;
+}
+
+ul li:hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A82ED;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(2):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #04a2ffb3;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(3):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #e23670;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(4):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #2a6cbb;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(5):hover:before {
+    filter: blur(4px);
+    box-shadow: 0 0 15 #ff1a1a;
+    transform: scale(1.2);
+}
+
+ul li:hover:nth-child(1) {
+    color: #0A82ED;
+    box-shadow: 0 0 15px #0A82ED;
+    text-shadow: 0 0 15px #0A82ED;
+}
+
+ul li:hover:nth-child(2) {
+    color: #04a2ffb3;
+    box-shadow: 0 0 15px #04a2ffb3;
+    text-shadow: 0 0 15px #04a2ffb3;
+}
+
+ul li:hover:nth-child(3) {
+    color: #e23670;
+    box-shadow: 0 0 15px #e23670;
+    text-shadow: 0 0 15px #e23670;
+}
+
+ul li:hover:nth-child(4) {
+    color: #2a6cbb;
+    box-shadow: 0 0 15px #2a6cbb;
+    text-shadow: 0 0 15px #2a6cbb;
+}
+
+ul li:hover:nth-child(5) {
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff1a1a;
+    text-shadow: 0 0 15px #ff1a1a;
+} */

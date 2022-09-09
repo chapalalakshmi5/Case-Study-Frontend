@@ -1,0 +1,115 @@
+<div class="login-box">
+    <div [hidden]="submitted" style="width: 400px;">
+        <div class="container">
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="name">id</label>
+                    <input type="text" class="form-control" id="id" required [(ngModel)]="company.id" name="id">
+                    <label>id</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">companyname</label>
+                    <input type="text" class="comname" id="comname" required [(ngModel)]="company.comname" name="comname">
+                    <label>comname</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">categories</label>
+                    <input type="text" class="form-control" id="categories" required [(ngModel)]="company.categories" name="categories">
+                    <label>categories</label>
+                </div>
+                <div class="form-group">
+                    <label for="name">image</label>
+                    <input type="text" class="form-control" id="image" required [(ngModel)]="company.image" name="image">
+                    <label>image</label>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+                <a type="submit" class="btn btn-success">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Submit
+                </a>
+            </form>
+        </div>
+    </div>
+
+    <div [hidden]="!submitted">
+        <h4>You submitted successfully!</h4>
+    </div>
+</div>
+<!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+
+
+<!-- <form>
+        <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label> -->
+
+
+
+
+
+<!-- <div class="login-box">
+    <h2>Add Product</h2>
+    <div [hidden]="submitted" style="width: 400px;">
+        <div class="container">
+            <form (ngSubmit)="onSubmit()">
+                <div class="user-box">
+                    <label for="name">id</label>
+                    <input type="text" class="form-control" id="id" required [(ngModel)]="company.id" name="id">
+                    <label>id</label>
+
+                </div>
+
+                <div class="user-box">
+                    <label for="name">companyname</label>
+                    <input type="text" class="comname" id="comname" required [(ngModel)]="company.comname" name="comname">
+                    <label>companyname</label>
+
+                </div>
+
+                <div class="user-box">
+                    <label for="name">categories</label>
+                    <input type="text" class="form-control" id="categories" required [(ngModel)]="company.categories" name="categories">
+                    <label>categories</label>
+
+                </div>
+                <div class="user-box">
+                    <label for="name">categories</label>
+                    <input type="file" class="form-control" id="image" required [(ngModel)]="company.image" name="categories">
+
+                    <label>Image Upload</label>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <a href="productlist" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Submit
+                </a>
+
+                <div [hidden]="!submitted">
+                    <h4>You submitted successfully!</h4>
+                </div>
+            </form>
+
+        </div> -->

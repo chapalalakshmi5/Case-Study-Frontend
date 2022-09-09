@@ -1,0 +1,46 @@
+<div class="container">
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+            <mat-list role="list">
+                <mat-list-item role="listitem">
+                    <a href="/coupon">
+                        Coupons</a>
+
+                </mat-list-item>
+
+                <mat-list-item role="listitem">
+                    <a href="/productlist">
+                        categories</a>
+
+
+                </mat-list-item>
+                <mat-list-item role="listitem">
+                    <a href="">
+                       Wallet</a>
+
+                </mat-list-item>
+
+
+                <mat-list-item role="listitem">
+                    <a href="http://localhost:8080/">
+                       Payment</a>
+
+                </mat-list-item>
+
+
+            </mat-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+
+            <mat-icon>dashboard</mat-icon>
+            <h1>Welcome User</h1>
+
+
+        </mat-sidenav-content>
+        <router-outlet></router-outlet>
+        <app-users></app-users>
+    </mat-sidenav-container>
+
+
+
+</div>
